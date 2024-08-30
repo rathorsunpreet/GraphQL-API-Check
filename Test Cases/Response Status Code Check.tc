@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>A/B Testing on response status code using global variables.</description>
+   <name>Response Status Code Check</name>
+   <tag>status</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66bd0c8c-1f07-4668-9274-a17fb09cbe0a</testCaseGuid>
+</TestCaseEntity>

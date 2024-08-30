@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Checking if response body has the correct format.</description>
+   <name>Schema Validation</name>
+   <tag>schema</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>796551ad-bb3c-4b33-bddb-697284046ce7</testCaseGuid>
+</TestCaseEntity>
