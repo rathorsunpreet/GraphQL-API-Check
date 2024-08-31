@@ -16,21 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-import com.kms.katalon.core.testobject.ResponseObject
-import com.kms.katalon.core.util.KeywordUtil
-
-String path = System.getProperty('user.dir') + GlobalVariable.schemaLocation
-
-schemaCheck = CustomKeywords.'responseCheck.schemaCheck.jsonSchema'(path)
-
-responseBody = CustomKeywords.'responseCheck.schemaCheck.getResponseBody'()
-
-status = CustomKeywords.'responseCheck.schemaCheck.checkSchema'(responseBody, schemaCheck)
+status = CustomKeywords.'responseCheck.statusCheck.checkCode'(GlobalVariable.failStatus)
 
 if (status) {
-	KeywordUtil.markPassed("Response Body Schema Validation Check Passed!")
+    KeywordUtil.markPassed('Response Status Code Check Passed!')
 } else {
-	KeywordUtil.markFailed("Response Body Schema Validation Check Failed!")
+    KeywordUtil.markFailed('Response Status Code Check Failed!')
 }
 

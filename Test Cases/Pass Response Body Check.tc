@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>A/B Testing on response body using global variables.</description>
-   <name>Response Body Check</name>
+   <name>Pass Response Body Check</name>
    <tag>body</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

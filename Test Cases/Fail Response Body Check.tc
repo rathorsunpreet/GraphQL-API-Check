@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>A/B Testing on response body using global variables.</description>
+   <name>Fail Response Body Check</name>
+   <tag>body</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>50a8311c-35a2-494e-8508-40f84947b14c</testCaseGuid>
+</TestCaseEntity>

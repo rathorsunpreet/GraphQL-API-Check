@@ -16,14 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-'Pass Check'
-status = CustomKeywords.'responseCheck.statusCheck.checkCode'(GlobalVariable.passStatus)
+status = CustomKeywords.'responseCheck.bodyCheck.checkName'(GlobalVariable.passName)
 
-assert status
-
-'Fail Check'
-status = CustomKeywords.'responseCheck.statusCheck.checkCode'(GlobalVariable.failStatus)
-
-assert !status
+if (status) {
+    KeywordUtil.markPassed('Response Body Check Passed!')
+} else {
+    KeywordUtil.markFailed('Response Body Check Failed!')
+}
 
